@@ -269,8 +269,20 @@ style="width:100%;padding:14px;background:#00b14f;color:white;border:none;border
 Hỗ trợ đặt xe 24/7
 
 </footer>
-
 <script>
+
+function sendZalo(){
+
+var pickup = document.getElementById("pickup").value;
+var destination = document.getElementById("destination").value;
+
+var message =
+"Đặt xe từ website:%0AĐiểm đón: " + pickup +
+"%0AĐiểm đến: " + destination;
+
+window.open("https://zalo.me/0334197792?text=" + message);
+
+}
 
 function getLocation(){
 
